@@ -1,11 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3b366b155d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Contact Form</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body class="bg-[#FAFAFA] flex justify-center items-center">
+    <main class="flex flex-col-reverse md:flex-row justify-center items-stretch mx-2 lg:mx-20 lg:my-20 my-10 drop-shadow-2xl">
+      <div class="bg-[#00D28E] flex justify-center items-start flex-col flex-grow-1 flex-shrink-1 p-6 md:p-12 md:basis-[350px]">
+        <h2 class="text-3xl mb-2 text-white w-full">Let's get in touch</h2>
+        <p class="text-base mb-6 text-[#ffffffcc] w-full">We're open for any suggestion or just to have a chat</p>
+        <div class="">
+          <article class="flex items-start mb-6">
+            <i class="fa-solid fa-location-dot rounded-full border-solid border-2 border-white/20 w-12 h-12 flex items-center justify-center p-4 text-white text-xl" ></i>
+            <p class="pl-4 text-[#ffffffcc] w-full"><span class="text-white">Address: </span>198 West 21th Street, Suite 721 New York NY 10016</p>
+          </article>
+          <article class="flex items-center mb-6">
+            <i class="fa-solid fa-phone rounded-full border-solid border-2 border-white/20 w-12 h-12 flex items-center justify-center p-4 text-white text-xl"></i>
+            <p class="pl-4 text-white w-full"><span>Phone: </span><a href="">+ 1235 2355 98</a></p>
+          </article>
+          <article class="flex items-center mb-6">
+            <i class="fa-solid fa-paper-plane rounded-full border-solid border-2 border-white/20 w-12 h-12 flex items-center justify-center p-4 text-white text-xl"></i>
+            <p class="pl-4 text-white w-full"><span>Email: </span><a href="">info@yoursite.com</a></p>
+          </article>
+          <article class="flex items-center mb-6">
+            <i class="fa-solid fa-earth-americas rounded-full border-solid border-2 border-white/20 w-12 h-12 flex items-center justify-center p-4 text-white text-xl"></i>
+            <p class="pl-4 text-white w-full"><span>Website: </span><a href="">yoursite.com</a></p>
+          </article>
+        </div>
+      </div>
+      <div class="flex flex-col justify-start items-start flex-grow-2 flex-shrink-1 p-6 md:p-12 bg-[#FFFFFF] md:basis-[400px] lg:basis-[600px] xl:basis-[800px]">
+        <h2 class="text-3xl mb-6 text-black">Get in touch</h2>
+        <form action="" class="flex items-start justify-center flex-col flex-wrap w-full">
+            <div class="flex w-full flex-col md:flex-row">
+                <div class="mb-4 flex flex-col w-full px-4">
+                    <label for="fullname" class="text-xs font-semibold mb-2 text-black">FULL NAME</label>
+                    <input type="text" name="fullname" id="fullname" placeholder="Name" class="outline-none border-b border-solid border-black/20 focus:border-[#00D28E] focus:border-b-2 placeholder:opacity-50"> 
+                </div>
+                <div class="mb-4 flex flex-col w-full px-4">
+                    <label for="email" class="text-xs font-semibold mb-2 text-black">EMAIL ADDRESS</label>
+                    <input type="email" name="email" id="email" placeholder="Email" class="outline-none border-b border-solid border-black/20 focus:border-[#00D28E] focus:border-b-2 placeholder:opacity-50">
+                </div>
+            </div>
+            <div class="mb-4 flex flex-col w-full px-4">
+                <label for="subject" class="text-xs font-semibold mb-2 text-black">SUBJECT</label>
+                <input type="text" name="subject" id="subject" placeholder="Subject" class="outline-none border-b border-solid border-black/20 focus:border-[#00D28E] focus:border-b-2 placeholder:opacity-50">
+            </div>
+            <div class="mb-4 flex flex-col w-full px-4">
+                <label for="message" class="text-xs font-semibold mb-2 text-black">MESSAGE</label>
+                <textarea name="message" id="message" cols="30" rows="4" placeholder="Message" class="outline-none border-b border-solid border-black/20 focus:border-[#00D28E] focus:border-b-2 placeholder:opacity-50"></textarea>
+            </div>
+            <div class="mb-4 w-full px-4">
+                <input type="submit" value="Send Message" class="mb-5 px-4 py-3 bg-[#00D28E] text-white rounded hover:bg-[#009F6C] ease-in-out duration-500">
+            </div>
+        </form>
+        </div>
+    </main>
+  </body>
 </html>
