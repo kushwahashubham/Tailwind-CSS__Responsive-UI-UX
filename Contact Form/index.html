@@ -40,20 +40,20 @@
             <div class="flex w-full flex-col md:flex-row">
                 <div class="mb-4 flex flex-col w-full px-4">
                     <label for="fullname" class="text-xs font-semibold mb-2 text-black" aria-label="Full name">FULL NAME</label>
-                    <input type="text" name="fullname" id="fullname" placeholder="Name" autocomplete="name" class="outline-none border-b border-solid border-black/20 focus:border-[#00D28E] focus:border-b-2 placeholder:opacity-50"> 
+                    <input type="text" name="fullname" id="fullname" placeholder="Name" required autofocus minlength="2" autocomplete="name" class="outline-none border-b border-solid border-black/20 focus:border-[#00D28E] focus:border-b-2 placeholder:opacity-50"> 
                 </div>
                 <div class="mb-4 flex flex-col w-full px-4">
                     <label for="email" class="text-xs font-semibold mb-2 text-black" aria-label="Email Address">EMAIL ADDRESS</label>
-                    <input type="email" name="email" id="email" placeholder="Email" autocomplete="email" class="outline-none border-b border-solid border-black/20 focus:border-[#00D28E] focus:border-b-2 placeholder:opacity-50">
+                    <input type="email" name="email" id="email" placeholder="Email" required autocomplete="email" class="outline-none border-b border-solid border-black/20 focus:border-[#00D28E] focus:border-b-2 placeholder:opacity-50">
                 </div>
             </div>
             <div class="mb-4 flex flex-col w-full px-4">
                 <label for="subject" class="text-xs font-semibold mb-2 text-black" aria-label="Subject of Message">SUBJECT</label>
-                <input type="text" name="subject" id="subject" placeholder="Subject" autocomplete="off" class="outline-none border-b border-solid border-black/20 focus:border-[#00D28E] focus:border-b-2 placeholder:opacity-50">
+                <input type="text" name="subject" id="subject" placeholder="Subject" required minlength="2" autocomplete="off" class="outline-none border-b border-solid border-black/20 focus:border-[#00D28E] focus:border-b-2 placeholder:opacity-50">
             </div>
             <div class="mb-4 flex flex-col w-full px-4">
                 <label for="message" class="text-xs font-semibold mb-2 text-black" aria-label="Message">MESSAGE</label>
-                <textarea name="message" id="message" cols="30" rows="4" placeholder="Message" autocomplete="off" class="outline-none border-b border-solid border-black/20 focus:border-[#00D28E] focus:border-b-2 placeholder:opacity-50"></textarea>
+                <textarea name="message" id="message" cols="30" rows="4" placeholder="Message" required autocomplete="off" class="outline-none border-b border-solid border-black/20 focus:border-[#00D28E] focus:border-b-2 placeholder:opacity-50"></textarea>
             </div>
             <div class="mb-4 w-full px-4">
                 <input type="submit" value="Send Message" class="mb-5 px-4 py-3 bg-[#00aa69] text-white rounded hover:bg-[#00874a] ease-in-out duration-500">
